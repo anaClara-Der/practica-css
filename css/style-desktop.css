@@ -1,0 +1,132 @@
+@media (min-width: 1024px) {
+  .nav-hamburguer,
+  .nav-cerrar {
+    display: none;
+  }
+  /*NAV*/
+  .container {
+    width: 85%;
+  }
+  .nav-cont {
+    padding: 0.7rem;
+  }
+  .desktop-ul {
+    display: flex;
+  }
+  .desktop-ul li {
+    list-style: none;
+    margin: 1rem;
+  }
+  .desktop-ul a {
+    text-decoration: none;
+    color: var(--gris);
+    transition: color 0.1s, border 0.1s;
+  }
+  .desktop-ul a:hover {
+    color: var(--principal);
+    border-bottom: 2px solid var(--secundarioV);
+    padding-bottom: 1.2rem;
+  }
+  .nav-btn {
+    display: flex;
+  }
+  .btn {
+    transition: opacity 0.1s;
+  }
+  .btn:hover {
+    opacity: 0.6;
+  }
+  /*HEADER*/
+  #header {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+
+  .header-fondo {
+    background-image: url("../images/bg-intro-desktop.svg");
+    width: 50vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+  }
+  .header-img {
+    right: -10rem;
+    height: auto;
+    z-index: 1;
+    width: 90%;
+  }
+  .hedader-texto {
+    margin: 11rem 7rem 0 7rem;
+    width: 40vw;
+    align-items: flex-start;
+  }
+  .header-h1,
+  .header-p,
+  .header-btn {
+    text-align: left;
+  }
+  /*CHOISE*/
+  #choose {
+    padding: 5rem 7rem;
+    text-align: left;
+  }
+  .choose-div-uno {
+    width: 60%;
+    margin: 0px;
+  }
+  .choose-div-dos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    margin: 0px;
+  }
+  /*ARTICLES*/
+  .articles-h2 {
+    text-align: left;
+  }
+  .articles-cont-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  .articles-tarjeta {
+    width: 100%;
+  }
+  .articles-img {
+    height: 50%;
+  }
+  /*FOOTER*/
+  #footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  .cont-footer-uno {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-img {
+    margin-bottom: 2rem;
+  }
+  .footer-icon-redes:hover {
+    color: var(--secundarioV);
+  }
+  .footer-cont-enlaces {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+  .footer-ul a:hover {
+    color: var(--secundarioV);
+  }
+}

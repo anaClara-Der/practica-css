@@ -1,0 +1,236 @@
+:root {
+  --principal: hsl(233, 26%, 24%);
+  --secundarioV: hsl(136, 65%, 51%);
+  --secundarioC: hsl(192, 70%, 51%);
+  --gris: hsl(233, 8%, 62%);
+  --azulClaro: hsl(220, 16%, 96%);
+  --grisClaro: hsl(0, 0%, 98%);
+  --blanco: hsl(0, 0%, 100%);
+  --gradient: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+/*GENERALES*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+.btn {
+  background-image: var(--gradient);
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.6rem 2rem;
+  color: var(--blanco);
+  cursor: pointer;
+}
+.p {
+  color: var(--gris);
+}
+.h2 {
+  font-size: 2rem;
+  color: var(--principal);
+  font-weight: 400;
+}
+/*NAV*/
+#nav {
+  width: 100vw;
+  background-color: var(--azulClaro);
+  position: absolute;
+  z-index: 3;
+  top: 0;
+}
+.nav-cerrar,
+.nav-btn,
+.desktop-ul {
+  display: none;
+}
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.nav-hamburguer {
+  cursor: pointer;
+}
+/*Menu movil desplegable*/
+.menu-movil {
+  display: none;
+  justify-content: center;
+  left: 5%;
+  background-color: var(--blanco);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 15%;
+  padding: 1rem;
+  text-align: center;
+}
+.movil-ul li {
+  list-style: none;
+  line-height: 2rem;
+}
+.movil-ul a {
+  text-decoration: none;
+  color: var(--principal);
+  font-weight: 700;
+}
+/*Clases para el menú con js*/
+.abrir {
+  display: flex;
+}
+.cerrar {
+  display: none;
+}
+/*HEADER*/
+#header {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.header-fondo {
+  background-image: url("../images/bg-intro-mobile.svg");
+  width: 100vw;
+  height: 55vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.header-img {
+  display: block;
+
+  height: 105%;
+  margin: 0px auto;
+  position: relative;
+  top: -3rem;
+}
+.hedader-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-h1 {
+  text-align: center;
+  font-weight: 300;
+  color: var(--principal);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+.header-p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+/*SECCION CHOOSE*/
+#choose {
+  text-align: center;
+  background-color: var(--azulClaro);
+  padding: 3rem 0;
+}
+.choose-h2,
+.choose-img,
+.choose-h3 {
+  margin-bottom: 1rem;
+}
+.choose-h3 {
+  color: var(--principal);
+  font-weight: 400;
+}
+.choose-p {
+  margin-bottom: 2rem;
+}
+/*ARTICLES*/
+#articles {
+  padding: 3rem 0;
+}
+.articles-h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.articles-tarjeta {
+  margin-bottom: 2rem;
+  background-color: var(--grisClaro);
+  border-radius: 0 0 5px 5px;
+}
+.articles-img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.tarjetas-texto {
+  padding: 1.5rem;
+}
+.articles-span {
+  display: inline-block;
+}
+.articles-span,
+.articles-h4 {
+  margin-bottom: 1rem;
+}
+/*Footer*/
+#footer {
+  background-color: var(--principal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+/*caja de logo e iconos de redes*/
+.cont-footer-uno {
+  margin-bottom: 1rem;
+}
+.footer-log-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-img {
+  background-color: var(--blanco);
+  margin-bottom: 1rem;
+}
+.footer-icon-redes {
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+/*caja de enlaces*/
+.footer-cont-enlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+.footer-ul a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+/*caja boton*/
+.cont-footer-dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-btn {
+  margin-bottom: 1rem;
+}
+.footer-span {
+  color: var(--blanco);
+  font-size: 0.7rem;
+  text-align: center;
+}
